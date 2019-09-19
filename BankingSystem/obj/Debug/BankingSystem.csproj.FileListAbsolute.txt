@@ -1,0 +1,10 @@
+D:\Visual Studio Projects\BankingSystem\BankingSystem\bin\Debug\BankingSystem.exe.config
+D:\Visual Studio Projects\BankingSystem\BankingSystem\bin\Debug\BankingSystem.exe
+D:\Visual Studio Projects\BankingSystem\BankingSystem\bin\Debug\BankingSystem.pdb
+D:\Visual Studio Projects\BankingSystem\BankingSystem\obj\Debug\BankingSystem.csprojResolveAssemblyReference.cache
+D:\Visual Studio Projects\BankingSystem\BankingSystem\obj\Debug\BankingSystem.Form1.resources
+D:\Visual Studio Projects\BankingSystem\BankingSystem\obj\Debug\BankingSystem.Properties.Resources.resources
+D:\Visual Studio Projects\BankingSystem\BankingSystem\obj\Debug\BankingSystem.csproj.GenerateResource.Cache
+D:\Visual Studio Projects\BankingSystem\BankingSystem\obj\Debug\BankingSystem.exe
+D:\Visual Studio Projects\BankingSystem\BankingSystem\obj\Debug\BankingSystem.pdb
+D:\Visual Studio Projects\BankingSystem\BankingSystem\obj\Debug\BankingSystem.SearchForm.resources
