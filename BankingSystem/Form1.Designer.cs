@@ -58,6 +58,9 @@
             this.tblBankTableAdapter = new BankingSystem.bank_dbDataSetTableAdapters.tblBankTableAdapter();
             this.tableAdapterManager = new BankingSystem.bank_dbDataSetTableAdapters.TableAdapterManager();
             this.exitButton = new System.Windows.Forms.Button();
+            this.accountCodeTip = new System.Windows.Forms.ToolTip(this.components);
+            this.bicTip = new System.Windows.Forms.ToolTip(this.components);
+            this.ibanTip = new System.Windows.Forms.ToolTip(this.components);
             accountCodeLabel = new System.Windows.Forms.Label();
             customerNameLabel = new System.Windows.Forms.Label();
             dateOpenedLabel = new System.Windows.Forms.Label();
@@ -75,7 +78,7 @@
             accountCodeLabel.AutoSize = true;
             accountCodeLabel.Location = new System.Drawing.Point(21, 117);
             accountCodeLabel.Name = "accountCodeLabel";
-            accountCodeLabel.Size = new System.Drawing.Size(82, 13);
+            accountCodeLabel.Size = new System.Drawing.Size(98, 19);
             accountCodeLabel.TabIndex = 1;
             accountCodeLabel.Text = "Account Code:";
             // 
@@ -84,7 +87,7 @@
             customerNameLabel.AutoSize = true;
             customerNameLabel.Location = new System.Drawing.Point(21, 143);
             customerNameLabel.Name = "customerNameLabel";
-            customerNameLabel.Size = new System.Drawing.Size(91, 13);
+            customerNameLabel.Size = new System.Drawing.Size(112, 19);
             customerNameLabel.TabIndex = 3;
             customerNameLabel.Text = "Customer Name:";
             // 
@@ -93,7 +96,7 @@
             dateOpenedLabel.AutoSize = true;
             dateOpenedLabel.Location = new System.Drawing.Point(21, 170);
             dateOpenedLabel.Name = "dateOpenedLabel";
-            dateOpenedLabel.Size = new System.Drawing.Size(79, 13);
+            dateOpenedLabel.Size = new System.Drawing.Size(94, 19);
             dateOpenedLabel.TabIndex = 5;
             dateOpenedLabel.Text = "Date Opened:";
             // 
@@ -102,7 +105,7 @@
             balanceLabel.AutoSize = true;
             balanceLabel.Location = new System.Drawing.Point(21, 195);
             balanceLabel.Name = "balanceLabel";
-            balanceLabel.Size = new System.Drawing.Size(50, 13);
+            balanceLabel.Size = new System.Drawing.Size(58, 19);
             balanceLabel.TabIndex = 7;
             balanceLabel.Text = "Balance:";
             // 
@@ -111,7 +114,7 @@
             onlineBankingLabel.AutoSize = true;
             onlineBankingLabel.Location = new System.Drawing.Point(21, 224);
             onlineBankingLabel.Name = "onlineBankingLabel";
-            onlineBankingLabel.Size = new System.Drawing.Size(91, 13);
+            onlineBankingLabel.Size = new System.Drawing.Size(105, 19);
             onlineBankingLabel.TabIndex = 9;
             onlineBankingLabel.Text = "Online Banking:";
             // 
@@ -120,7 +123,7 @@
             bICLabel.AutoSize = true;
             bICLabel.Location = new System.Drawing.Point(21, 250);
             bICLabel.Name = "bICLabel";
-            bICLabel.Size = new System.Drawing.Size(27, 13);
+            bICLabel.Size = new System.Drawing.Size(33, 19);
             bICLabel.TabIndex = 11;
             bICLabel.Text = "BIC:";
             // 
@@ -129,7 +132,7 @@
             iBANLabel.AutoSize = true;
             iBANLabel.Location = new System.Drawing.Point(21, 276);
             iBANLabel.Name = "iBANLabel";
-            iBANLabel.Size = new System.Drawing.Size(35, 13);
+            iBANLabel.Size = new System.Drawing.Size(43, 19);
             iBANLabel.TabIndex = 13;
             iBANLabel.Text = "IBAN:";
             // 
@@ -138,7 +141,7 @@
             accountTypeLabel.AutoSize = true;
             accountTypeLabel.Location = new System.Drawing.Point(21, 302);
             accountTypeLabel.Name = "accountTypeLabel";
-            accountTypeLabel.Size = new System.Drawing.Size(78, 13);
+            accountTypeLabel.Size = new System.Drawing.Size(94, 19);
             accountTypeLabel.TabIndex = 15;
             accountTypeLabel.Text = "Account Type:";
             // 
@@ -157,15 +160,16 @@
             this.accountCodeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tblBankBindingSource, "AccountCode", true));
             this.accountCodeTextBox.Location = new System.Drawing.Point(113, 113);
             this.accountCodeTextBox.Name = "accountCodeTextBox";
-            this.accountCodeTextBox.Size = new System.Drawing.Size(199, 22);
+            this.accountCodeTextBox.Size = new System.Drawing.Size(199, 25);
             this.accountCodeTextBox.TabIndex = 2;
+            this.accountCodeTip.SetToolTip(this.accountCodeTextBox, "Account Code must be 6 characters long");
             // 
             // customerNameTextBox
             // 
             this.customerNameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tblBankBindingSource, "CustomerName", true));
             this.customerNameTextBox.Location = new System.Drawing.Point(113, 139);
             this.customerNameTextBox.Name = "customerNameTextBox";
-            this.customerNameTextBox.Size = new System.Drawing.Size(199, 22);
+            this.customerNameTextBox.Size = new System.Drawing.Size(199, 25);
             this.customerNameTextBox.TabIndex = 4;
             // 
             // dateOpenedDateTimePicker
@@ -173,7 +177,7 @@
             this.dateOpenedDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.tblBankBindingSource, "DateOpened", true));
             this.dateOpenedDateTimePicker.Location = new System.Drawing.Point(113, 165);
             this.dateOpenedDateTimePicker.Name = "dateOpenedDateTimePicker";
-            this.dateOpenedDateTimePicker.Size = new System.Drawing.Size(199, 22);
+            this.dateOpenedDateTimePicker.Size = new System.Drawing.Size(199, 25);
             this.dateOpenedDateTimePicker.TabIndex = 6;
             // 
             // balanceTextBox
@@ -181,7 +185,7 @@
             this.balanceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tblBankBindingSource, "Balance", true));
             this.balanceTextBox.Location = new System.Drawing.Point(113, 191);
             this.balanceTextBox.Name = "balanceTextBox";
-            this.balanceTextBox.Size = new System.Drawing.Size(199, 22);
+            this.balanceTextBox.Size = new System.Drawing.Size(199, 25);
             this.balanceTextBox.TabIndex = 8;
             // 
             // onlineBankingCheckBox
@@ -198,23 +202,25 @@
             this.bICTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tblBankBindingSource, "BIC", true));
             this.bICTextBox.Location = new System.Drawing.Point(113, 248);
             this.bICTextBox.Name = "bICTextBox";
-            this.bICTextBox.Size = new System.Drawing.Size(199, 22);
+            this.bICTextBox.Size = new System.Drawing.Size(199, 25);
             this.bICTextBox.TabIndex = 12;
+            this.bicTip.SetToolTip(this.bICTextBox, "BIC must be 8 characters long");
             // 
             // iBANTextBox
             // 
             this.iBANTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tblBankBindingSource, "IBAN", true));
             this.iBANTextBox.Location = new System.Drawing.Point(113, 274);
             this.iBANTextBox.Name = "iBANTextBox";
-            this.iBANTextBox.Size = new System.Drawing.Size(199, 22);
+            this.iBANTextBox.Size = new System.Drawing.Size(199, 25);
             this.iBANTextBox.TabIndex = 14;
+            this.ibanTip.SetToolTip(this.iBANTextBox, "IBAN must be 14 characters long");
             // 
             // accountTypeTextBox
             // 
             this.accountTypeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.tblBankBindingSource, "AccountType", true));
             this.accountTypeTextBox.Location = new System.Drawing.Point(113, 300);
             this.accountTypeTextBox.Name = "accountTypeTextBox";
-            this.accountTypeTextBox.Size = new System.Drawing.Size(199, 22);
+            this.accountTypeTextBox.Size = new System.Drawing.Size(199, 25);
             this.accountTypeTextBox.TabIndex = 16;
             // 
             // firstButton
@@ -319,7 +325,7 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(575, 406);
             this.Controls.Add(this.exitButton);
@@ -381,6 +387,9 @@
         private System.Windows.Forms.Button updateButton;
         private System.Windows.Forms.Button searchButton;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.ToolTip accountCodeTip;
+        private System.Windows.Forms.ToolTip bicTip;
+        private System.Windows.Forms.ToolTip ibanTip;
     }
 }
 

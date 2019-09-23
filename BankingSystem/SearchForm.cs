@@ -15,7 +15,7 @@ namespace BankingSystem
     {
         OleDbConnection connection;
 
-        string connectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\\Visual Studio Projects\\BankingSystem\\bank_db.mdb;";
+        string connectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=bank_db.mdb;";
         
 
         public SearchForm()
@@ -65,43 +65,43 @@ namespace BankingSystem
 
                                 break;
                             case "true":
-                                queryString = "SELECT * FROM tblBank WHERE OnlineBanking ;";//+ field + searchOp + searchVal + ";";
+                                queryString = "SELECT * FROM tblBank WHERE OnlineBanking ;";
                                 myAdapter = new OleDbDataAdapter(queryString, connection);
                                 break;
                             case "1":
-                                queryString = "SELECT * FROM tblBank WHERE OnlineBanking ;";//+ field + searchOp + searchVal + ";";
+                                queryString = "SELECT * FROM tblBank WHERE OnlineBanking ;";
                                 myAdapter = new OleDbDataAdapter(queryString, connection);
                                 break;
                             case "Yes":
-                                queryString = "SELECT * FROM tblBank WHERE OnlineBanking ;";//+ field + searchOp + searchVal + ";";
+                                queryString = "SELECT * FROM tblBank WHERE OnlineBanking ;";
                                 myAdapter = new OleDbDataAdapter(queryString, connection);
                                 break;
                             case "yes":
-                                queryString = "SELECT * FROM tblBank WHERE OnlineBanking ;";//+ field + searchOp + searchVal + ";";
+                                queryString = "SELECT * FROM tblBank WHERE OnlineBanking ;";
                                 myAdapter = new OleDbDataAdapter(queryString, connection);
                                 break;
                             case "False":
-                                queryString = "SELECT * FROM tblBank WHERE not OnlineBanking ;";//+ field + searchOp + searchVal + ";";
+                                queryString = "SELECT * FROM tblBank WHERE not OnlineBanking ;";
                                 myAdapter = new OleDbDataAdapter(queryString, connection);
                                 break;
                             case "false":
-                                queryString = "SELECT * FROM tblBank WHERE not OnlineBanking ;";//+ field + searchOp + searchVal + ";";
+                                queryString = "SELECT * FROM tblBank WHERE not OnlineBanking ;";
                                 myAdapter = new OleDbDataAdapter(queryString, connection);
                                 break;
                             case "0":
-                                queryString = "SELECT * FROM tblBank WHERE not OnlineBanking ;";//+ field + searchOp + searchVal + ";";
+                                queryString = "SELECT * FROM tblBank WHERE not OnlineBanking ;";
                                 myAdapter = new OleDbDataAdapter(queryString, connection);
                                 break;
                             case "No":
-                                queryString = "SELECT * FROM tblBank WHERE not OnlineBanking ;";//+ field + searchOp + searchVal + ";";
+                                queryString = "SELECT * FROM tblBank WHERE not OnlineBanking ;";
                                 myAdapter = new OleDbDataAdapter(queryString, connection);
                                 break;
                             case "no":
-                                queryString = "SELECT * FROM tblBank WHERE not OnlineBanking ;";//+ field + searchOp + searchVal + ";";
+                                queryString = "SELECT * FROM tblBank WHERE not OnlineBanking ;";
                                 myAdapter = new OleDbDataAdapter(queryString, connection);
                                 break;
                             default :
-                                queryString = "SELECT * FROM tblBank WHERE not OnlineBanking ;";//+ field + searchOp + searchVal + ";";
+                                queryString = "SELECT * FROM tblBank WHERE not OnlineBanking ;";
                                 myAdapter = new OleDbDataAdapter(queryString, connection);
                                 break;
 
@@ -135,7 +135,7 @@ namespace BankingSystem
         {
             string testConnectionString;
             OleDbConnection cnn;
-            testConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\\Visual Studio Projects\\BankingSystem\\bank_db.mdb; ";
+            testConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=bank_db.mdb; ";
             cnn = new OleDbConnection(testConnectionString);
             try
             {

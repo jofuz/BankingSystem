@@ -8,3 +8,14 @@ D:\Visual Studio Projects\BankingSystem\BankingSystem\obj\Debug\BankingSystem.cs
 D:\Visual Studio Projects\BankingSystem\BankingSystem\obj\Debug\BankingSystem.exe
 D:\Visual Studio Projects\BankingSystem\BankingSystem\obj\Debug\BankingSystem.pdb
 D:\Visual Studio Projects\BankingSystem\BankingSystem\obj\Debug\BankingSystem.SearchForm.resources
+C:\Users\joeys\Desktop\BankingSystem\BankingSystem\bin\Debug\BankingSystem.exe.config
+C:\Users\joeys\Desktop\BankingSystem\BankingSystem\bin\Debug\BankingSystem.exe
+C:\Users\joeys\Desktop\BankingSystem\BankingSystem\bin\Debug\BankingSystem.pdb
+C:\Users\joeys\Desktop\BankingSystem\BankingSystem\obj\Debug\BankingSystem.csprojAssemblyReference.cache
+C:\Users\joeys\Desktop\BankingSystem\BankingSystem\obj\Debug\BankingSystem.Form1.resources
+C:\Users\joeys\Desktop\BankingSystem\BankingSystem\obj\Debug\BankingSystem.Properties.Resources.resources
+C:\Users\joeys\Desktop\BankingSystem\BankingSystem\obj\Debug\BankingSystem.SearchForm.resources
+C:\Users\joeys\Desktop\BankingSystem\BankingSystem\obj\Debug\BankingSystem.csproj.GenerateResource.cache
+C:\Users\joeys\Desktop\BankingSystem\BankingSystem\obj\Debug\BankingSystem.csproj.CoreCompileInputs.cache
+C:\Users\joeys\Desktop\BankingSystem\BankingSystem\obj\Debug\BankingSystem.exe
+C:\Users\joeys\Desktop\BankingSystem\BankingSystem\obj\Debug\BankingSystem.pdb
